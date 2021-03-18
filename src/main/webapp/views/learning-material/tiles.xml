@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- 
+ * tiles.xml
+
+ * Copyright (C) 2016 Universidad de Sevilla
+ * Author (A) 2012 Rafael Corchuelo (corchu@us.es)
+ * 
+ * The use of this project is hereby constrained to the conditions of the 
+ * TDG Licence, a copy of which you may download from 
+ * http://www.tdg-seville.info/License.html
+ -->
+
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+       
+<tiles-definitions>
+
+	<definition name="learning-material/list" extends="master.page">	
+		<put-attribute name="title" value="Learning Materia list" />
+		<put-attribute name="body" value="/views/learning-material/list.jsp" />
+	</definition>
+
+    <definition name="learning-material/text/edit" extends="master.page">
+		<put-attribute name="title" value="Edit learning material(Text)" />
+		<put-attribute name="body" value="/views/learning-material/edittext.jsp" />
+	</definition>
+	
+	<definition name="learning-material/text/create" extends="master.page">
+		<put-attribute name="title" value="Create learning material(Text)" />
+		<put-attribute name="body" value="/views/learning-material/edittext.jsp" />
+	</definition>
+	
+	<definition name="learning-material/videos/edit" extends="master.page">
+		<put-attribute name="title" value="Edit learning material(Videos)" />
+		<put-attribute name="body" value="/views/learning-material/editvideos.jsp" />
+	</definition>
+	
+	<definition name="learning-material/videos/create" extends="master.page">
+		<put-attribute name="title" value="Create learning material(Videos)" />
+		<put-attribute name="body" value="/views/learning-material/editvideos.jsp" />
+	</definition>
+	
+	<definition name="learning-material/presentation/edit" extends="master.page">
+		<put-attribute name="title" value="Edit learning material(Presentation)" />
+		<put-attribute name="body" value="/views/learning-material/editpresentation.jsp" />
+	</definition>
+	
+	<definition name="learning-material/presentation/create" extends="master.page">
+		<put-attribute name="title" value="Create learning material(Presentation)" />
+		<put-attribute name="body" value="/views/learning-material/editpresentation.jsp" />
+	</definition>
+	
+	<definition name="learning-material/addlearning-material" extends="master.page">
+		<put-attribute name="title" value="Add Learning Material" />
+		<put-attribute name="body" value="/views/learning-material/addlearning-material.jsp" />
+	</definition>
+</tiles-definitions>

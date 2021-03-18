@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- 
+ * tiles.xml
+
+ * Copyright (C) 2016 Universidad de Sevilla
+ * 
+ * The use of this project is hereby constrained to the conditions of the 
+ * TDG Licence, a copy of which you may download from 
+ * http://www.tdg-seville.info/License.html
+ -->
+
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+       
+<tiles-definitions>
+
+	<definition name="recipe/list" extends="master.page">	
+		<put-attribute name="title" value="Recipes list" />
+		<put-attribute name="body" value="/views/recipe/list.jsp" />
+	</definition>
+	<definition name="recipe/qualified" extends="master.page">	
+		<put-attribute name="title" value="Qualified recipe" />
+		<put-attribute name="body" value="/views/recipe/qualified.jsp" />
+	</definition>
+	
+	<definition name="recipe/display" extends="master.page">	
+		<put-attribute name="title" value="Display recipe" />
+		<put-attribute name="body" value="/views/recipe/display.jsp" />
+	</definition>
+	
+	<definition name="recipe/edit" extends="master.page">	
+		<put-attribute name="title" value="Edit recipe" />
+		<put-attribute name="body" value="/views/recipe/edit.jsp" />
+	</definition>
+	<definition name="recipe/quantity/edit" extends="master.page">	
+		<put-attribute name="title" value="Edit ingredient of recipe" />
+		<put-attribute name="body" value="/views/recipe/quantityedit.jsp" />
+	</definition>
+	<definition name="recipe/cookstep/edit" extends="master.page">	
+		<put-attribute name="title" value="Edit cook step" />
+		<put-attribute name="body" value="/views/recipe/cookstepedit.jsp" />
+	</definition>
+	<definition name="recipe/create" extends="master.page">	
+		<put-attribute name="title" value="Create recipe" />
+		<put-attribute name="body" value="/views/recipe/create.jsp" />
+	</definition>
+	<definition name="recipe/comment/create" extends="master.page">	
+		<put-attribute name="title" value="Create comment" />
+		<put-attribute name="body" value="/views/recipe/commentcreate.jsp" />
+	</definition>
+
+</tiles-definitions>

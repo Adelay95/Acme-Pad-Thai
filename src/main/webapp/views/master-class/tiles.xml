@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- 
+ * tiles.xml
+
+ * Copyright (C) 2016 Universidad de Sevilla
+ * Author (A) 2012 Rafael Corchuelo (corchu@us.es)
+ * 
+ * The use of this project is hereby constrained to the conditions of the 
+ * TDG Licence, a copy of which you may download from 
+ * http://www.tdg-seville.info/License.html
+ -->
+
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+       
+<tiles-definitions>
+
+	<definition name="master-class/list" extends="master.page">	
+		<put-attribute name="title" value="Master classes list" />
+		<put-attribute name="body" value="/views/master-class/list.jsp" />
+	</definition>
+	
+	<definition name="master-class/edit" extends="master.page">
+		<put-attribute name="title" value="Edit master class" />
+		<put-attribute name="body" value="/views/master-class/edit.jsp" />
+	</definition>
+	
+	<definition name="master-class/cook/create" extends="master.page">
+		<put-attribute name="title" value="Create a master class" />
+		<put-attribute name="body" value="/views/master-class/edit.jsp" />
+	</definition>
+	
+	<definition name="master-class/attend" extends="master.page">
+		<put-attribute name="title" value="Attend" />
+		<put-attribute name="body" value="/views/master-class/attend.jsp" />
+	</definition>
+	
+	<definition name="master-class/cook" extends="master.page">
+		<put-attribute name="title" value="Master classes list of the Cook" />
+		<put-attribute name="body" value="/views/master-class/list.jsp" />
+	</definition>
+
+    <definition name="learning-material/list-learning-material" extends="master.page">
+		<put-attribute name="title" value="Show learning material" />
+		<put-attribute name="body" value="/views/master-class/list-learning-material.jsp" />
+	</definition>
+</tiles-definitions>

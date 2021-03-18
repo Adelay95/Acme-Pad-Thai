@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- 
+ * tiles_es.xml
+
+ * Copyright (C) 2016 Universidad de Sevilla
+ * 
+ * The use of this project is hereby constrained to the conditions of the 
+ * TDG Licence, a copy of which you may download from 
+ * http://www.tdg-seville.info/License.html
+ -->
+
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+       
+<tiles-definitions>
+
+	<definition name="property/list" extends="master.page">	
+		<put-attribute name="title" value="Lista de propiedades" />
+		<put-attribute name="body" value="/views/property/list.jsp" />
+	</definition>
+	
+	<definition name="property/edit" extends="master.page">
+		<put-attribute name="title" value="Edición de una propiedad" />
+		<put-attribute name="body" value="/views/property/edit.jsp" />
+	</definition>
+	<definition name="property/create" extends="master.page">
+		<put-attribute name="title" value="Creación de una propiedad" />
+		<put-attribute name="body" value="/views/property/edit.jsp" />
+	</definition>
+	<definition name="property/createHas" extends="master.page">
+		<put-attribute name="title" value="Creación de un valor de propiedad" />
+		<put-attribute name="body" value="/views/property/editHas.jsp" />
+	</definition>
+	<definition name="property/listHas" extends="master.page">
+		<put-attribute name="title" value="Lista de valores de propiedades" />
+		<put-attribute name="body" value="/views/property/listHas.jsp" />
+	</definition>
+	<definition name="property/editHas" extends="master.page">
+		<put-attribute name="title" value="Edición de un valor de propiedad" />
+		<put-attribute name="body" value="/views/property/editHas.jsp" />
+	</definition>
+</tiles-definitions>
